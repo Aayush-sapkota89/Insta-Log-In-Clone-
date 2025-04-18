@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 350px;
+            border-radius: 5px;
+        }
+        .logo {
+            width: 150px;
+            margin: 20px auto;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .separator::before,
+        .separator::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #dbdbdb;
+        }
+        .separator span {
+            padding: 0 10px;
+            color: gray;
+            font-size: 12px;
+        }
+        .facebook-login {
+            color: #385185;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .forgot-password {
+            color: #00376b;
+            font-size: 12px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .signup-container {
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+            background: white;
+            width: 350px;
+            border-radius: 5px;
+        }
+        .signup-container span {
+            color: #0095f6;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
+        <input type="text" placeholder="Phone number, username, or email" class="input-field">
+        <input type="password" placeholder="Password" class="input-field">
+        <button class="login-btn">Log in</button>
+        <div class="separator"><span>OR</span></div>
+        <div class="facebook-login">Log in with Facebook</div>
+        <div class="forgot-password">Forgot password?</div>
+    </div>
+    <div class="signup-container">
+        Don't have an account? <span>Sign up</span>
+    </div>
+</body>
+</html>
